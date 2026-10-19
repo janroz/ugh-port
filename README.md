@@ -10,6 +10,12 @@ it did in 1992.
 cave people waiting on ledges and drop them off where they want to go, while dinosaurs, rain and rising
 water get in the way.
 
+<p align="center">
+  <img src="docs/screenshots/menu.png" width="32%" alt="Main menu">
+  <img src="docs/screenshots/level.png" width="32%" alt="Level 9 in play">
+  <img src="docs/screenshots/demo.png" width="32%" alt="Attract-mode demo">
+</p>
+
 It is also a piece of software archaeology. The original `UGH.EXE` (Borland C++, 16-bit real mode, most
 of the game written in hand-made assembly) was disassembled and decompiled routine by routine, and every
 routine was ported to modern C++23 on top of [SDL 3](https://libsdl.org), keeping its logic, its data layout
