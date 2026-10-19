@@ -1,0 +1,19 @@
+# Build output
+/build/
+/compile_commands.json
+/.cache/
+
+# The original game. Never commit it: the port needs the player's own copy of UGH.EXE.
+/ugh/
+*.EXE
+*.exe
+UGH!.HI
+
+# Disassembly and decompiler output of the original (derived from copyrighted code); regenerate locally
+# with the scripts in analysis/ghidra_scripts.
+/analysis/export/
+/analysis/dumps/
+
+# Local tooling
+/.remember/
+.DS_Store

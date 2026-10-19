@@ -1,0 +1,31 @@
+---
+Checks: >
+  -*,
+  bugprone-*,
+  -bugprone-easily-swappable-parameters,
+  cert-*,
+  clang-analyzer-*,
+  cppcoreguidelines-*,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -cppcoreguidelines-pro-bounds-constant-array-index,
+  -cppcoreguidelines-pro-bounds-avoid-unchecked-container-access,
+  misc-*,
+  -misc-include-cleaner,
+  -misc-non-private-member-variables-in-classes,
+  modernize-*,
+  -modernize-use-trailing-return-type,
+  performance-*,
+  readability-*,
+  -readability-magic-numbers,
+  -readability-identifier-length,
+  -readability-function-cognitive-complexity
+WarningsAsErrors: '*'
+HeaderFilterRegex: '^.*/(src|tools)/.*'
+CheckOptions:
+  - key: cppcoreguidelines-no-malloc.Allocations
+    value: '::malloc;::calloc'
+  - key: cppcoreguidelines-no-malloc.Reallocations
+    value: '::realloc'
+  - key: cppcoreguidelines-no-malloc.Deallocations
+    value: '::free'
+...
