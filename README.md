@@ -1,12 +1,19 @@
 # UGH! — a faithful C++ port of the 1992 DOS game
 
+This project is an experiment with [Claude Code](https://claude.com/claude-code), Anthropic's AI coding agent:
+the reverse engineering and the port were done by Claude Code, working with me. I know the original game well
+and checked every step against it. It is not a remake or a rewrite "in the spirit of" the original. It is a
+port: each routine of the original program was translated into C++, one by one, so the game behaves exactly as
+it did in 1992.
+
 *UGH!* (Play Byte, 1992) is a stone-age taxi game: you fly a pedal-powered helicopter, pick up
 cave people waiting on ledges and drop them off where they want to go, while dinosaurs, rain and rising
 water get in the way.
 
-This project is a piece of software archaeology. The original `UGH.EXE` (Borland C++, 16-bit real mode, most
+It is also a piece of software archaeology. The original `UGH.EXE` (Borland C++, 16-bit real mode, most
 of the game written in hand-made assembly) was disassembled and decompiled routine by routine, and every
-routine was rewritten in modern C++23 on top of [SDL 3](https://libsdl.org). The goal is a port that plays
+routine was ported to modern C++23 on top of [SDL 3](https://libsdl.org), keeping its logic, its data layout
+and its original address in a comment. The goal is a port that plays
 **exactly** like the original: the same physics, timing, random numbers, sounds and even the same bugs.
 It has been played side by side with the original running in DOSBox-X, and every difference found that way
 was traced back to the original code and fixed.
